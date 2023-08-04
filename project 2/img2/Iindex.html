@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELIVERY non-vegMeals.com </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script&family=Sacramento&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">">
+    <style>
+        /* CSS reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS variables*/
+:root{
+    --navbar-height: 60px;
+
+}
+/* NAVIGATION BAR*/
+#navbar{
+    display: flex;
+    align-items: center; 
+    /*justify contentmakes it center*/
+    font-family: 'Dancing Script', cursive;
+    #navbar{
+    position:relative;/* it will adjust the opacity background according to the navbarli*/
+}
+}
+/* NAVIGATION BAR for logo and image*/
+#logo{ 
+    margin: 10px 34px;
+
+}
+#logo img{
+    margin: 4px 5px;
+    height: 56px;
+
+}
+ul{
+    display: flex;
+}
+ul li{
+        list-style: none;
+    font-size: 1.5rem;
+   
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+   padding: 3px 22px;
+   text-decoration: none;
+   border: 20px;
+   
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+/* NAVIGATION BAR for list styling*/
+
+/*HOME SECTION*/
+#home{
+    display: flex;
+    padding: 3px 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 578x;
+    font-size: 12px;
+    color: white;
+    font-family: 'Borel', cursive;
+
+}
+/*now adding background in home part*/
+#home::before{
+    content: "";
+    /*to fit large image*/
+   background: url('chicken-skewers-with-slices-sweet-peppers-dill.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0;
+    left: 0;
+}
+/*Client Section*/
+#clients-section{
+    height: 344px;
+    position: relative;
+}
+#client-section::before{
+    content: '';
+    position: absolute;
+    background: url(pizza-pizza-filled-with-tomatoes-salami-olives.jpg);
+    width: 100%;
+    height: 45%;
+    opacity: 0.4;
+    z-index: -1;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#clients img{
+    height: 140px;
+}
+.client-item{
+    padding: 34px;
+}
+/*Utility Classes*/
+.primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Borel', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Borel', cursive;
+}
+.btn{
+    border: 2px solid white;
+    padding: 6px 20px;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+/*Services Section*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    border-radius: 34px;
+    margin: 3px 6px;
+    background-color: yellow;
+}
+#services .box img{
+    height: 155px;
+    display: block;
+    margin: auto;
+   
+}
+#services .box p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*contact section*/
+#contact{
+
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("telephone-612061_1280.jpg")no-repeat center center/cover;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;   
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="icons8-junk-food-64.png" alt="My online meal.com">
+            </div>
+            <ul>
+            <li class="item"><a href="$">Home</a></li>
+            <li class="item"><a href="$">Services</a></li>
+            <li class="item"><a href="$">Contact Us</a></li>
+            <li class="item"><a href="$">About Us</a></li>
+            <li class="item"><a href="$">Rate Us</a></li>
+            </ul>
+    </nav>
+    <!--end of navigation bar-->
+    <section id="home">
+        <h1 class="primary">
+            Welcome To Non-Veg Meal
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque maxime corporis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt at eligendi impedit!</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="primary center">Our Services</h1>
+     <div id="services">
+        <div id="services">
+            <div class="box">
+                <img src="hamburger-1238246_1280.jpg" alt="">
+               <h2 class="h-secondary center">Food Ordering</h2>
+               <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aperiam aspernatur, delectus exercitationem debitis id dignissimos quasi eligendi nulla accusantium facilis distinctio nobis mollitia veritatis ipsa soluta dolor facere ducimus iste quisquam nesciunt. Amet?</p>
+            </div>
+            <div class="box">
+                <img src="food-6571583_1280.jpg" alt="">
+               <h2 class="h-secondary center">Grocerry Ordering</h2>
+               <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aperiam aspernatur, delectus exercitationem debitis id dignissimos quasi eligendi nulla accusantium facilis distinctio nobis mollitia veritatis ipsa soluta dolor facere ducimus iste quisquam nesciunt. Amet?</p>
+            </div>
+            <div class="box">
+                <img src="waffles-2190961_1280.jpg" alt="">
+               <h2 class="h-secondary center"> Bulk Food Ordering</h2>
+               <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aperiam aspernatur, delectus exercitationem debitis id dignissimos quasi eligendi nulla accusantium facilis distinctio nobis mollitia veritatis ipsa soluta dolor facere ducimus iste quisquam nesciunt. Amet?</p>
+            </div>
+         </div>
+
+    </section>
+    <section id="client-section">
+        <h1 class="primary center"> OUR CLIENTS</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="starbucks-1262392_1280.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="samsung-1163504_1280.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="apple-2385198_1280.jpg" alt="">
+            </div><div class="client-item">
+                <img src="youtube-6621791_1280.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="primary center">Contact Us</h1>
+        <div id="contact-box">
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <form action="">
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your mail">
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <label for="phone">Phone-No</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your phone">
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="phone">Messages</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        
+           </form>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.pido.com
+        </div>
+    </footer>
+   
+</body>
+</html>

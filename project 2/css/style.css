@@ -1,0 +1,16 @@
+/* CSS reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS variables*/
+:root{
+    --navbar-height: 60px;
+
+}
+/* NAVIGATION BAR*/
+#navbar{
+    display: flex;
+    align-items: center; 
+}
